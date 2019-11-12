@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="" />
+<meta property="og:description" content=" Mermaid Chart Mermaid is library for generating svg charts and diagrams from text.
+Example {{&lt; mermaid [class=&#34;text-center&#34;]&gt;}} sequenceDiagram Alice-&gt;&gt;Bob: Hello Bob, how are you? alt is sick Bob-&gt;&gt;Alice: Not so good :( else is well Bob-&gt;&gt;Alice: Feeling fresh like a daisy end opt Extra response Bob-&gt;&gt;Alice: Thanks for asking end {{&lt; /mermaid &gt;}}   sequenceDiagram Alice-Bob: Hello Bob, how are you? alt is sick Bob-Alice: Not so good :( else is well Bob-Alice: Feeling fresh like a daisy end opt Extra response Bob-Alice: Thanks for asking end   " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://eiuapp.github.io/notepad-handbook/docs/shortcodes/mermaid/" />
+
+<title>Mermaid | notepad</title>
+<link rel="icon" href="/notepad-handbook/favicon.png" type="image/x-icon">
+
+
+<link rel="stylesheet" href="/notepad-handbook/book.min.d54f2886415be97240a76611f87e576a761d64c07020a767fa0ffd1bdc8bda93.css" integrity="sha256-1U8ohkFb6XJAp2YR&#43;H5XanYdZMBwIKdn&#43;g/9G9yL2pM=">
+
+
+<script defer src="/notepad-handbook/search.min.2a09d2166c7fefee175fd0d356bb08aa1eae013e24e7d381015bdad335075a68.js" integrity="sha256-KgnSFmx/7&#43;4XX9DTVrsIqh6uAT4k59OBAVva0zUHWmg="></script>
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav>
+<h2 class="book-brand">
+  <a href="https://eiuapp.github.io/notepad-handbook/"><span>notepad</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" placeholder="Search" id="book-search-input" maxlength="64" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+    
+
+
+
+
+</nav>
+
+
+<script>
+(function() {
+  var menu = document.querySelector("aside.book-menu nav");
+  addEventListener("beforeunload", function(event) {
+    localStorage.setItem("menu.scrollTop", menu.scrollTop);
+  });
+  menu.scrollTop = localStorage.getItem("menu.scrollTop");
+})();
+</script>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="flex align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/notepad-handbook/svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>Mermaid</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="mermaid-chart">Mermaid Chart</h1>
+
+<p><a href="https://mermaidjs.github.io/">Mermaid</a> is library for generating svg charts and diagrams from text.</p>
+
+<h2 id="example">Example</h2>
+
+<div class="book-columns flex flex-wrap">
+  
+  <div class="flex-even markdown-inner">
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"><span style="color:#75715e">{{</span><span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">mermaid</span> <span style="color:#f92672">[</span><span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-center&#34;</span><span style="color:#f92672">]&gt;</span><span style="color:#75715e">}}</span>
+sequenceDiagram
+    Alice-&gt;&gt;Bob: Hello Bob, how are you?
+    alt is sick
+        Bob-&gt;&gt;Alice: Not so good :(
+    else is well
+        Bob-&gt;&gt;Alice: Feeling fresh like a daisy
+    end
+    opt Extra response
+        Bob-&gt;&gt;Alice: Thanks for asking
+    end
+<span style="color:#75715e">{{</span><span style="color:#f92672">&lt;</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">mermaid</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}}</span></code></pre></div>
+  </div>
+  
+  <div class="flex-even markdown-inner">
+    <script src="/notepad-handbook/mermaid.min.js"></script>
+
+<p class="mermaid">
+  
+sequenceDiagram
+    Alice->>Bob: Hello Bob, how are you?
+    alt is sick
+        Bob->>Alice: Not so good :(
+    else is well
+        Bob->>Alice: Feeling fresh like a daisy
+    end
+    opt Extra response
+        Bob->>Alice: Thanks for asking
+    end
+  </div>
+  
+</div>
+
+</article>
+
+      
+<div class="book-footer justify-end">
+  
+  
+  <div>
+    
+    <a class="flex align-center" href="https://github.com/eiuapp/notepad-handbook/edit/master/content/docs/shortcodes/mermaid.md" target="_blank" rel="noopener">
+      <img src="/notepad-handbook/svg/edit.svg" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+    
+  </div>
+  
+</div>
+
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc levels-3 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#mermaid-chart">Mermaid Chart</a>
+<ul>
+<li><a href="#example">Example</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+
+  
+</body>
+
+</html>
